@@ -23,6 +23,15 @@ class ExonumJava < Formula
   end
 
   test do
-    system "true"
+    java_home = %x[java -XshowSettings:properties -version 2>&1 > /dev/null | grep 'java.home' | awk '{print $3}'].strip
+    java_lib_dir = `find #{java_home} -type f -name libjvm.\* | xargs -n1 dirname`.strip
+    ohai java_lib_dir
+    ENV["LD_LIBRARY_PATH"] = java_lib_dir
+    ENV.delete "_JAVA_OPTIONS"
+    (testpath/"services.toml").write <<-EOS
+      [user_services]
+      fake_service = "/fake/path"
+    EOS
+    system "exonum-java", "--help"
   end
 end
