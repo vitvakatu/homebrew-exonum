@@ -11,6 +11,15 @@ class ExonumJava < Formula
   def install
     prefix.install Dir["*"]
     bin.install_symlink prefix/"exonum-java"
+    ohai "Exonum Java App installed successfully."
+    ohai "Installation location is #{prefix}"
+    ohai "Use the following command to set EXONUM_HOME: "
+    ohai "export EXONUM_HOME=#{prefix}"
+    ohai ""
+    ohai "For basic documentation and usage instructions, see"
+    ohai "#{prefix}/TUTORIAL.md"
+    ohai "or"
+    ohai "https://exonum.com/doc/version/latest/get-started/java-binding"
   end
 
   test do
