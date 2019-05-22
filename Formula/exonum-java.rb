@@ -14,7 +14,7 @@ class ExonumJava < Formula
     ohai "Exonum Java App installed successfully."
     ohai "Installation location is #{prefix}"
     ohai "Use the following command to set EXONUM_HOME: "
-    ohai "export EXONUM_HOME=#{prefix}"
+    ohai "  export EXONUM_HOME=#{prefix}"
     ohai ""
     ohai "For basic documentation and usage instructions, see"
     ohai "#{prefix}/TUTORIAL.md"
