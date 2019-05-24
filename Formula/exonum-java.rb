@@ -20,6 +20,10 @@ class ExonumJava < Formula
     ohai "#{prefix}/TUTORIAL.md"
     ohai "or"
     ohai "https://exonum.com/doc/version/latest/get-started/java-binding"
+    ohai ""
+    ohai "Exonum Java App requires a path to JVM to use in LD_LIBRARY_PATH"
+    ohai "Please see the instructions at"
+    ohai "https://exonum.com/doc/version/latest/get-started/java-binding/#installation"
   end
 
   test do
