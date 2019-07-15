@@ -7,7 +7,7 @@ class ExonumJava < Formula
   depends_on :java
   depends_on "libsodium"
 # TODO: remove when ECR-3169 is closed
-  depends_on "rocksdb"
+  depends_on "rocksdb5"
 
   def install
     prefix.install Dir["*"]
