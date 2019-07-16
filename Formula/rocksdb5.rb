@@ -1,3 +1,7 @@
+# Licensed under BSD 2-Clause License, see file LICENSE-BSD.txt
+# Copyright (c) 2009-present, Homebrew contributors
+# Modified by Exonum team, 2019
+
 class Rocksdb5 < Formula
   desc "Embeddable, persistent key-value store for fast storage"
   homepage "https://rocksdb.org/"
