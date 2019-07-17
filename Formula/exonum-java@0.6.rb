@@ -1,11 +1,13 @@
-class ExonumJava < Formula
+class ExonumJavaAT06 < Formula
   desc "Java runtime for Exonum blockchain"
   homepage "https://exonum.com"
-  url "https://github.com/exonum/exonum-java-binding/releases/download/ejb%2Fv0.7.0/exonum-java-0.7.0-release-Mac.zip"
-  sha256 "c9ac41e831ea97d55c8a3da111a774dc369c9c87e250f1545b871087d5b1bb23"
+  url "https://github.com/exonum/exonum-java-binding/releases/download/ejb%2Fv0.6.0/exonum-java-0.6.0-release-Mac.zip"
+  sha256 "de4165d173bb2330a818183d3aad07bd81f61f9c1b5316725f9856b3c90a89ff"
 
   depends_on :java
   depends_on "libsodium"
+# TODO: remove when ECR-3169 is closed
+  depends_on "rocksdb5"
 
   def install
     prefix.install Dir["*"]
@@ -38,3 +40,4 @@ class ExonumJava < Formula
     system "exonum-java", "--help"
   end
 end
+
