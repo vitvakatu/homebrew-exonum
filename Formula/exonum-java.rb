@@ -12,8 +12,11 @@ class ExonumJava < Formula
     prefix.install Dir["*"]
     ohai "Exonum Java App installed successfully."
     ohai "Installation location is #{prefix}"
+    ohai "Use the following command to set EXONUM_HOME: "
+    ohai "  export EXONUM_HOME=#{prefix}"
+    ohai ""
     ohai "Use the following command to set PATH: "
-    ohai "  export PATH=$PATH:#{prefix}/bin"
+    ohai "  export PATH=$PATH:$EXONUM_HOME/bin"
     ohai ""
     ohai "For basic documentation and usage instructions, see"
     ohai "#{prefix}/TUTORIAL.md"
