@@ -10,6 +10,8 @@ class ExonumJava < Formula
 
   def install
     prefix.install Dir["*"]
+# Remove until ECR-3368 is resolved
+    rm_f bin/"exonum-java"
     ohai "Exonum Java App installed successfully."
     ohai "Installation location is #{prefix}"
     ohai "Use the following command to set EXONUM_HOME: "
