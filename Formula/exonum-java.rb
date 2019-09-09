@@ -3,7 +3,6 @@ class ExonumJava < Formula
   homepage "https://exonum.com"
   url "https://github.com/exonum/exonum-java-binding/releases/download/ejb%2Fv0.8.0/exonum-java-0.8.0-release-Mac.zip"
   sha256 "acdaf6305d9af7b0efb3f5cd5de6d9e3fe2ada7a0efb00623b9068e125284fdb"
-  revision 1
 
   depends_on :java
   depends_on "libsodium"
