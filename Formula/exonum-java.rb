@@ -19,13 +19,4 @@ class ExonumJava < Formula
     ohai "or"
     ohai "https://exonum.com/doc/version/latest/get-started/java-binding"
   end
-
-  test do
-    ENV.delete "_JAVA_OPTIONS"
-    (testpath/"services.toml").write <<-EOS
-      [user_services]
-      fake_service = "/fake/path"
-    EOS
-    system "exonum-java", "--help"
-  end
 end
