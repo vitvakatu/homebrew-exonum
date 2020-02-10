@@ -1,8 +1,8 @@
-class ExonumJavaAT09Rc1 < Formula
+class ExonumJavaAT090Rc2 < Formula
   desc "Java runtime for Exonum blockchain"
   homepage "https://exonum.com"
-  url "https://github.com/exonum/exonum-java-binding/releases/download/ejb%2Fv0.9.0-rc1/exonum-java-0.9.0-rc1-release-Mac.zip"
-  sha256 "b607fd8e2a4c15b6e8890a71826197b5ed70528ea209d5cf29e7f5f1da74eedb"
+  url "https://github.com/exonum/exonum-java-binding/releases/download/ejb%2Fv0.9.0-rc2/exonum-java-0.9.0-rc2-release-Mac.zip"
+  sha256 "0c37e7093e3596a77e599c8dab4252240306b3d39b6fa72fa679a5da81ebf525"
 
   depends_on :java
   depends_on "libsodium"

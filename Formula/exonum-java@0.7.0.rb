@@ -1,4 +1,4 @@
-class ExonumJavaAT07 < Formula
+class ExonumJavaAT070 < Formula
   desc "Java runtime for Exonum blockchain"
   homepage "https://exonum.com"
   url "https://github.com/exonum/exonum-java-binding/releases/download/ejb%2Fv0.7.0/exonum-java-0.7.0-release-Mac.zip"
